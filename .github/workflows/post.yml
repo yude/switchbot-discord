@@ -3,6 +3,9 @@ name: Scheduler
 # https://help.github.com/en/github/automating-your-workflow-with-github-actions/events-that-trigger-workflows#scheduled-events-schedule
 
 on:
+  push:
+    branches:
+      - main
   schedule:
     - cron:  '*/15 * * * *'
 
