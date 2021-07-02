@@ -20,3 +20,4 @@ jobs:
         DEVICE_ID: ${{ secrets.DEVICE_ID }}
         TOKEN: ${{ secrets.TOKEN }}
         URL: ${{ secrets.URL }}
+        TZ: Asia/Tokyo
