@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 json=$(/usr/bin/curl -s -X GET "https://api.switch-bot.com/v1.0/devices/${secrets.DEVICE_ID}/status" -H "Authorization: ${secrets.TOKEN}")
 humid=$(echo $json | jq '.body.humidity')

@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Post content to Discord
-      run: sh post.sh
+      run: bash post.sh
