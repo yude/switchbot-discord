@@ -6,3 +6,6 @@ Register the following environment variables in "Secrets" page.
 * `DEVICE_ID`: Device id of your Switchbot Hub
 * `TOKEN`: Your token for Switchbot API
 * `URL`: Discord Webhook URL
+
+## License
+This repository is provided under the MIT License.
