@@ -7,4 +7,5 @@ temp=$(echo $json | jq '.body.temperature')
 date=$(date "+%Y/%m/%d %H:%M:%S")
 
 content="気温: ${temp} ℃, 湿度: ${humid} %"
-curl -H "Content-Type: application/json" -X POST -d '{"username": "'"$date"'", "content": "'"$content"'"}' $URL
+embed="https://mackerel.io/embed/public/embed/4mVIU29WCRVZgHUxQPzWsfXo953uxiAegbjDb83hTQ7szesCunwdpVkBIzhnLc9i.png?period=15m"
+curl -H "Content-Type: application/json" -X POST -d '{"username": "'"$date"'", "content": "'"$content\r$embed"'"}' $URL
