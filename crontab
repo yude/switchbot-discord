@@ -1,1 +1,1 @@
-*/15 * * * * sh /app/run.sh
+*/15 * * * * cd /app && sh /app/run.sh
