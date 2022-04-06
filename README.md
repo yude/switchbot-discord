@@ -2,10 +2,17 @@
 🌅 Send the environment of my room to Discord Text Channel via Webhook periodically
 
 ## Setup
-Register the following environment variables in "Secrets" page.
-* `DEVICE_ID`: Device id of your Switchbot Hub
-* `TOKEN`: Your token for Switchbot API
-* `URL`: Discord Webhook URL
+* This app runs with Docker Compose.
+1. Setup `.env`.
+```sh
+cp .env.sample .env
+# Setup your environment values
+nano .env
+```
+2. Run the app.
+```sh
+docker-compose up -d
+```
 
 ## License
-This repository is provided under the MIT License.
+MIT License

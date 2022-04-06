@@ -1,0 +1,10 @@
+version: '3'
+services:
+  app:
+    build: .
+    image: ghcr.io/yude/switchbot-discord
+    volumes:
+      - type: bind
+        source: ".env"
+        target: "/app/.env"
+    restart: unless-stopped
