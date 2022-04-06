@@ -3,13 +3,13 @@
 
 ## Setup
 * This app runs with Docker Compose.
-1. Setup `.env`.
-```sh
-cp .env.sample .env
-# Setup your environment values
-nano .env
+1. Copy files from this repository.
 ```
-2. Run the app.
+curl -o .env https://raw.githubusercontent.com/yude/switchbot-discord/main/.env.sample \
+     -o https://raw.githubusercontent.com/yude/switchbot-discord/main/docker-compose.yml
+```
+2. Insert your credentials into `.env`.
+3. Run the app.
 ```sh
 docker-compose up -d
 ```
