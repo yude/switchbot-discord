@@ -1,7 +1,7 @@
 version: '3'
 services:
   app:
-    build: .
+    build: https://github.com/yude/switchbot-discord.git
     image: ghcr.io/yude/switchbot-discord
     volumes:
       - type: bind
