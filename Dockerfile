@@ -1,4 +1,4 @@
-FROM alpine/curl
+FROM curlimages/curl
 
 RUN apk update; apk upgrade; apk add --no-cache jq
 
