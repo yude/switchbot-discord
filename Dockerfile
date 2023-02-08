@@ -7,4 +7,4 @@ ADD run.sh /app/
 ADD crontab /var/spool/cron/crontabs/root
 RUN chmod +x /app/run.sh
 
-CMD crond -l 1 -f
+CMD cron -l 1 -f
