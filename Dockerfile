@@ -1,6 +1,6 @@
-FROM curlimages/curl
+FROM debian
 
-RUN apk update; apk upgrade; apk add --no-cache jq
+RUN apt update; apt upgrade; apt -y install jq
 
 WORKDIR /app
 ADD run.sh /app/
