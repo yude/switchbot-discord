@@ -1,6 +1,6 @@
 FROM debian
 
-RUN apt update; apt upgrade; apt -y install jq
+RUN apt update; apt upgrade; apt -y install jq curl cron
 
 WORKDIR /app
 ADD run.sh /app/
