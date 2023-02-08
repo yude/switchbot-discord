@@ -1,10 +1,10 @@
-FROM debian
+FROM alpine
 
-RUN apt update; apt upgrade; apt -y install jq curl cron
+RUN apk update; apk upgrade; apk add --no-cache jq cron
 
 WORKDIR /app
 ADD run.sh /app/
 ADD crontab /var/spool/cron/crontabs/root
 RUN chmod +x /app/run.sh
 
-CMD cron -l 1 -f
+CMD crond -l 1 -f
