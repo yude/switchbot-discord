@@ -1,6 +1,6 @@
 FROM alpine
 
-RUN apk update; apk upgrade; apk add --no-cache jq
+RUN apk update; apk upgrade; apk add --no-cache jq curl
 
 WORKDIR /app
 ADD run.sh /app/
