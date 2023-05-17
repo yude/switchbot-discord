@@ -1,6 +1,6 @@
 FROM alpine
 
-RUN apk update; apk upgrade; apk add --no-cache jq curl
+RUN apk update; apk upgrade; apk add --no-cache jq curl tzdata
 
 WORKDIR /app
 ADD run.sh /app/
